@@ -1,16 +1,32 @@
-# React + Vite
+# Butterfly Fanbase
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Sitio independiente de una fanbase de BTS en Costa Rica. React, JavaScript, CSS y Vite.
 
-Currently, two official plugins are available:
+## Desarrollo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```sh
+npm ci
+npm run dev
+npm run build
+```
 
-## React Compiler
+## Publicación
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+GitHub Actions compila y publica automáticamente cada cambio en `main`.
+Sitio: https://dacevedocubillo.github.io/butterfly-fanbase/
 
-## Expanding the Oxlint configuration
+La navegación por hash permite abrir las cinco páginas directamente en GitHub Pages sin un servidor adicional:
+`#inicio`, `#noticias`, `#votaciones`, `#guias`, `#agenda`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Contenido
+
+Editar `src/data/content.js`. Las noticias deben incluir fecha, categoría y fuente.
+Las votaciones necesitan fecha de cierre ISO con zona horaria; se ocultan al vencer.
+Los eventos necesitan fecha, categoría y fuente; las horas deben expresarse en horario de Costa Rica.
+
+No se inventan convocatorias ni eventos. Los estados vacíos significan que no hay entradas publicadas en este sitio.
+El calendario es navegable y permite filtrar por tipo y fecha; no se sincroniza con servicios externos.
+Los artículos, mensajes y fechas se actualizan editando los datos, no automáticamente.
+
+Las cuatro redes proporcionadas por la fanbase aparecen en el pie de todas las páginas.
+La integración de charts/streams está pospuesta y no está implementada.
