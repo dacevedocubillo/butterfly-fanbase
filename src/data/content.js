@@ -42,9 +42,9 @@ export const votes = [
   },
   {
     id: "aaa-2026", status: "closed", title: "AAA 2026 · Popularity Award", platform: "IDOLCHAMP",
-    description: "La convocatoria finalizó el 4 de noviembre a las 23:59 KST: 8:59 a. m. de Costa Rica. El hilo del 1 de noviembre ya no refleja su vigencia.",
+    description: "La votación finalizó el 4 de noviembre a las 23:59 KST: 8:59 a. m. de Costa Rica. El hilo del 1 de noviembre ya no refleja su vigencia.",
     closesAt: "2026-11-04T23:59:00+09:00", verifiedOn: "2026-11-05", steps: [],
-    url: "https://www.starnewskorea.com/en/star/2026/09/04/2026090414043351811", sourceUrl: "https://www.starnewskorea.com/en/star/2026/09/04/2026090414043351811", buttonLabel: "Ver convocatoria original"
+    url: "https://www.starnewskorea.com/en/star/2026/09/04/2026090414043351811", sourceUrl: "https://www.starnewskorea.com/en/star/2026/09/04/2026090414043351811", buttonLabel: "Ver votación original"
   },
 ];
 // Events need id, title, description, date (YYYY-MM-DD), type, url and optional time (Costa Rica).
