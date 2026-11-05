@@ -28,10 +28,10 @@ export const votes = [
   },
   {
     id: "mama-2026", status: "pending", title: "MAMA 2026 · Fans’ Choice", platform: "App Mnet Plus",
-    description: "El hilo compartido señala a BTS en Fans’ Choice. El enlace oficial dirige a la app; no pude comprobar allí el cierre y las instrucciones completas de la ronda.",
+    description: "BTS figura en Fans’ Choice en el hilo de referencia. Abre Mnet Plus para consultar la ronda disponible, su cierre y las instrucciones vigentes.",
     verifiedOn: "2026-11-05", deadlineLabel: "Cierre pendiente de verificar en Mnet Plus.",
     steps: ["Abre el enlace oficial en tu teléfono e ingresa a Mnet Plus.", "Revisa que la ronda siga abierta, su cierre y la categoría de BTS antes de participar."],
-    url: "https://mnetplus.world/event/en/2026-mama", sourceUrl: "https://x.com/olivittoo/status/2116986162049134965", buttonLabel: "Consultar en Mnet Plus"
+    url: "https://mnetplus.world/event/en/2026-mama", sourceLabel: "Ver hilo de referencia", sourceUrl: "https://x.com/olivittoo/status/2116986162049134965", buttonLabel: "Consultar en Mnet Plus"
   },
   {
     id: "kca-2026", status: "pending", title: "Kids’ Choice Awards 2026 · BTS", platform: "Sitio de Nickelodeon",
