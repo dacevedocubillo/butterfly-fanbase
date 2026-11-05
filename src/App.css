@@ -1,0 +1,507 @@
+.site {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 24px 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 28px;
+  background: var(--pink);
+  border-radius: 0 0 12px 12px;
+}
+
+.header .navigation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: auto;
+  order: 0;
+}
+
+.navigation a {
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navigation a:hover {
+  background: #efd5df;
+  color: var(--burgundy);
+}
+
+.header > .button {
+  flex-shrink: 0;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.navigation a:hover {
+  color: var(--burgundy);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 10px 20px;
+  border: 1px solid var(--burgundy);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button-primary {
+  background: var(--burgundy);
+  color: white;
+}
+
+.button-primary:hover {
+  background: #650927;
+}
+
+.button-outline {
+  color: var(--burgundy);
+  background: transparent;
+}
+
+.button-outline:hover {
+  background: #ffffff60;
+}
+
+.dashboard {
+  margin-top: 8px;
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  align-items: center;
+  min-height: 420px;
+  padding: 48px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: radial-gradient(circle at 85% 20%, #ffffff80, transparent 40%),
+  linear-gradient(120deg, #f8e5e9, #eadbe9 60%, #c2d5ef);
+  gap: 40px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  margin: 0 0 16px;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  margin: 0;
+  color: var(--burgundy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 4vw, 58px);
+  font-weight: normal;
+  line-height: 1.15;
+}
+
+.hero-description {
+  max-width: 420px;
+  margin: 22px 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-caption {
+  margin: 48px 0 0;
+  color: var(--burgundy);
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+.news-card {
+  min-width: 0;
+  padding: 24px;
+  background: var(--pink);
+  border-radius: 8px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.section-label {
+  color: var(--burgundy);
+  font-size: 11px;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-item {
+  padding: 18px 0;
+  border-bottom: 1px solid #850d351a;
+}
+
+.news-item:first-child {
+  padding-top: 0;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-category {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #edc3ce;
+  color: var(--burgundy);
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.news-item h3 {
+  margin: 10px 0 6px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.news-item p {
+  margin: 0;
+  color: #515c7c;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.section-description {
+  margin: 8px 0 0;
+  color: #515c7c;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.stream-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.army-card {
+  margin-top: 12px;
+  padding: 36px;
+  border-radius: 8px;
+  background: var(--burgundy);
+  color: #fff5f7;
+}
+
+.army-card h2 {
+  margin: 0 0 20px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: normal;
+}
+
+.army-message {
+  max-width: 650px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.army-signature {
+  margin: 24px 0 0;
+  font-size: 13px;
+  color: #f2c6d5;
+}
+
+.dates-card {
+  margin-top: 12px;
+}
+
+.events-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.event-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid #850d351a;
+}
+
+.event-item:last-child {
+  border-bottom: none;
+}
+
+.event-date {
+  flex-shrink: 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: #efd5df;
+  color: var(--burgundy);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.event-item h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.event-item p {
+  margin: 0;
+  color: #515c7c;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.social-card {
+  margin-top: 12px;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.social-empty {
+  margin: 20px 0 0;
+  color: var(--burgundy);
+  font-size: 13px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 12px;
+  padding: 28px;
+  border-radius: 8px;
+  background: var(--burgundy);
+  color: #fff5f7;
+}
+
+.footer-brand {
+  margin: 0 0 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+}
+
+.footer-description,
+.footer-notice {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.footer-notice {
+  max-width: 320px;
+  color: #f2c6d5;
+}
+
+.footer-top {
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+.footer-top:hover {
+  text-decoration: underline;
+}
+
+.butterfly-hero h1 span {
+  color: #345999;
+}
+
+.butterfly-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-width: 0;
+}
+
+.logo-orbit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 320px);
+  aspect-ratio: 1;
+  padding: 24px;
+  border: 1px solid #ffffffb3;
+  border-radius: 50%;
+  background: #ffffff40;
+  box-shadow: 0 18px 45px #34599915;
+}
+
+.logo-orbit img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.butterfly-visual p {
+  margin: 0;
+  color: #345999;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  font-style: italic;
+  text-align: center;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 24px;
+  padding: 12px 28px;
+  background: var(--pink);
+  border-radius: 0 0 8px 8px;
+}
+
+.header .navigation {
+  grid-column: 2;
+  width: auto;
+  justify-content: center;
+  order: 0;
+}
+
+.header > .button {
+  grid-column: 3;
+  justify-self: end;
+}
+
+@media (max-width: 600px) {
+.site {
+  padding: 0 12px 12px;
+}
+
+.header > .button {
+  padding: 8px 12px;
+  font-size: 10px;
+}
+
+.navigation {
+  gap: 16px;
+}
+
+.hero-caption {
+  margin-top: 32px;
+  line-height: 1.8;
+}
+}
+
+@media (max-width: 700px) {
+.support-grid {
+  grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 600px) {
+.army-card {
+  padding: 24px;
+}
+}
+
+@media (max-width: 600px) {
+.event-item {
+  flex-direction: column;
+  gap: 10px;
+}
+}
+
+@media (max-width: 700px) {
+.footer {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+}
+}
+
+@media (max-width: 700px) {
+.butterfly-hero {
+  grid-template-columns: 1fr;
+  gap: 28px;
+  padding: 32px 24px;
+}
+
+.logo-orbit {
+  width: 220px;
+}
+
+.butterfly-hero .hero-caption {
+  margin-top: 28px;
+}
+}
+
+@media (max-width: 900px) {
+.header {
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+
+.header .navigation,
+  .header > .button {
+  grid-column: 1;
+  justify-self: center;
+}
+}
+
+
