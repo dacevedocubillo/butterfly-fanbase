@@ -31,6 +31,10 @@
   transition: background 0.2s, color 0.2s;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 .navigation a:hover {
   background: #efd5df;
   color: var(--burgundy);
@@ -172,7 +176,7 @@
 
 .section-label {
   color: var(--burgundy);
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .news-list {
@@ -219,8 +223,8 @@
 .section-description {
   margin: 8px 0 0;
   color: #515c7c;
-  font-size: 12px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.65;
 }
 
 .support-grid {
@@ -503,5 +507,115 @@
   justify-self: center;
 }
 }
+
+/* Compact navigation and a shorter introduction on phones. */
+@media (max-width: 600px) {
+  .header {
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 8px 12px;
+    border: 1px solid var(--burgundy);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--burgundy);
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .header > .button {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    min-height: 44px;
+    font-size: 13px;
+  }
+
+  .header .navigation {
+    display: none;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+    gap: 4px;
+  }
+
+  .header .navigation.is-open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navigation a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 15px;
+  }
+
+  .butterfly-hero {
+    padding: 26px 22px;
+    gap: 20px;
+    min-height: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(30px, 8vw, 40px);
+  }
+
+  .hero-description {
+    margin: 18px 0;
+  }
+
+  .hero-actions .button {
+    min-height: 44px;
+    font-size: 14px;
+  }
+
+  .butterfly-hero .hero-caption {
+    margin-top: 20px;
+    font-size: 10px;
+  }
+
+  .logo-orbit {
+    width: 170px;
+    padding: 10px;
+  }
+
+  .logo-orbit img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+  }
+
+  .butterfly-visual {
+    gap: 12px;
+  }
+
+  .butterfly-visual p {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .news-card {
+    padding: 22px;
+  }
+
+  .section-heading {
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .section-label,
+  .social-empty {
+    font-size: 14px;
+  }
+}
+
 
 

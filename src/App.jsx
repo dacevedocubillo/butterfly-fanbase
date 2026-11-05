@@ -1,7 +1,9 @@
 import "./App.css";
+import { useState } from "react";
 import butterflyLogo from "./assets/Butter - Logo-Photoroom.png";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const links = ["Inicio", "Votaciones", "Stream", "Fechas importantes", "Para ARMY", "Redes"];
   const targets = ["home", "votaciones", "stream", "fechas", "para-army", "redes"];
 
@@ -9,16 +11,19 @@ function Header() {
     <header className="header">
     
 
-      <nav className="navigation" aria-label="Main navigation">
+      <button className="menu-toggle" type="button" aria-expanded={menuOpen} aria-controls="main-navigation" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? "Cerrar menú ×" : "Menú ☰"}
+      </button>
+      <nav id="main-navigation" className={`navigation${menuOpen ? " is-open" : ""}`} aria-label="Navegación principal">
         {links.map((link, index) => (
-          <a key={link} href={`#${targets[index]}`}>
+          <a key={link} href={`#${targets[index]}`} onClick={() => setMenuOpen(false)}>
             {link}
           </a>
         ))}
       </nav>
 
       <a className="button button-primary" href="#redes">
-        Únete a nuestro ARMY →
+        Nuestras redes →
       </a>
     </header>
   );
