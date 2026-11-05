@@ -212,7 +212,11 @@ function FechasImportantes() {
 
 
 function Redes() {
-  const redes = [];
+  const redes = [
+    { id: "x", nombre: "X · @butterfly_fbcr", url: "https://x.com/butterfly_fbcr" },
+    { id: "instagram", nombre: "Instagram · @butterfly_fbcr", url: "https://www.instagram.com/butterfly_fbcr/" },
+    { id: "tiktok", nombre: "TikTok · @butter7ly.cr", url: "https://www.tiktok.com/@butter7ly.cr" },
+  ];
 
   return (
     <section className="news-card social-card" id="redes">
