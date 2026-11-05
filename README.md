@@ -30,3 +30,5 @@ Los artículos, mensajes y fechas se actualizan editando los datos, no automáti
 
 Las cuatro redes proporcionadas por la fanbase aparecen en el pie de todas las páginas.
 La integración de charts/streams está pospuesta y no está implementada.
+
+Los siete cumpleaños y los aniversarios de BTS y ARMY están en annualEvents. Se generan para el año del calendario automáticamente, sin necesidad de actualizarlos cada año.
