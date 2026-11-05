@@ -3,14 +3,15 @@ import butterflyLogo from "./assets/Butter - Logo-Photoroom.png";
 
 function Header() {
   const links = ["Inicio", "Votaciones", "Stream", "Fechas importantes", "Para ARMY", "Redes"];
+  const targets = ["home", "votaciones", "stream", "fechas", "para-army", "redes"];
 
   return (
     <header className="header">
     
 
       <nav className="navigation" aria-label="Main navigation">
-        {links.map((link) => (
-          <a key={link} href={`#${link.toLowerCase()}`}>
+        {links.map((link, index) => (
+          <a key={link} href={`#${targets[index]}`}>
             {link}
           </a>
         ))}
